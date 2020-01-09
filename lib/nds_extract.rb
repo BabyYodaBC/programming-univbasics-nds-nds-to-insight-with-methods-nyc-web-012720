@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 require 'pp'
-pp nds
+
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
@@ -20,6 +20,7 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
+  pp nds
   result = {}
   director_index = 0
   while director_index < nds[director_index].length do
