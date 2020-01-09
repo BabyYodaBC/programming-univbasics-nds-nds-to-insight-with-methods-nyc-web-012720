@@ -20,7 +20,6 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
-  pp nds
   result = {}
   director_index = 0
   while director_index < nds[director_index].length do
